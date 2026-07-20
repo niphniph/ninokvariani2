@@ -1,0 +1,39 @@
+@import "tailwindcss";
+@config "../tailwind.config.js";
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .academic-border {
+    border-bottom: 1px solid rgba(199, 168, 91, 0.2);
+  }
+  .gold-glow {
+    text-shadow: 0 0 15px rgba(199, 168, 91, 0.3);
+  }
+  .premium-shadow {
+    box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.5);
+  }
+  .academic-gradient {
+    background: linear-gradient(180deg, rgba(0, 36, 26, 0) 0%, rgba(0, 36, 26, 1) 100%);
+  }
+}
+
+body {
+  background-color: #00241a;
+  color: #fbf9f3;
+  font-family: 'Inter', sans-serif;
+  overflow-x-hidden: true;
+  scroll-behavior: smooth;
+}
+
+/* Custom styles for animations or visual effects */
+.egg-region {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.egg-region:hover {
+  fill-opacity: 0.15;
+  filter: drop-shadow(0 0 8px rgba(199, 168, 91, 0.5));
+}
